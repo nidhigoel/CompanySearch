@@ -1,0 +1,175 @@
+{% load i18n %} 
+{% include 'header.html' %}
+{% load app_filter %}
+{% load staticfiles %}
+
+<link rel="stylesheet" href="/static/css/w3.css">
+</div>
+    <!-- Main Content -->
+    <div class="container">
+      <!--   <div class = "row" > 
+            <label> Industry Name : {{ industryName }} </label> <br>
+            <label> Sector Name : {{ sectorName }} </label> <br>
+            <label> Reviews : Total {{ no_of_sentences }} Reviews</label>  <br>
+             <table> 
+                <tr> 
+                    <td> <label> Rating : </label>  </td>
+                     
+                    <td>  <input id="input-id" name="input-name" type="number" class="rating" clearButton = "1"  showClear = "false"  clearButtonTitle = "click me"  min=0 max=5 step=0.5 data-size="xs" rtl = "true" data-rtl="false"   
+                    value = '{{ overallRating }}'   readOnly = "false"  displayOnly = "false">
+                    
+                    </td>
+                </tr>
+              </table>
+
+            <label> Description : {{ description }} </label> <br> 
+            <label>  Website : <a href = "http://{{ website }}" > {{ website }} </a> </label>
+           
+            </div> -->
+
+        <div class="row" >
+            <div class="col-lg-12 col-lg-offset-0 col-md-12 col-md-offset-0">
+            <h3 class="post-subtitle">
+                <center><b>Displaying features with sentiment : {{ specified_sentiment }}</b></center>
+            </h3>
+            {% for key , value in feature_json.items %}
+                {% if specified_sentiment|stringformat:"s" == value.sentiment|sentiment_filter|stringformat:"s" %}
+                    
+                
+            <!-- <div class="w3-panel w3-border w3-border-black"> -->
+                <!-- <div class="w3-panel w3-leftbar w3-sand w3-xxlarge w3-serif"> -->
+                <div class="w3-panel w3-border w3-pale-grey w3-border-blue">
+                <div class="panel-body">
+                   
+                        <!-- <h2 class="post-title">
+                            Feature name : {{ key|caps_filter }}
+                        </h2> -->
+                         <div class="w3-panel w3-leftbar w3-sand w3-xxlarge w3-serif">
+                            <p><i> Feature name : {{ key|caps_filter }}</i></p>
+                          </div>
+                   
+                        <h3 class="post-subtitle">
+                           Sentiment : {{ value.sentiment|sentiment_filter }}
+                        </h3> 
+                        <h3 class="post-subtitle">
+                           Total Number of Reviews :  {{value.no_of_sentences}}
+                        </h3> 
+                        
+                         <!-- {% for id in value.sentence_ids %}
+                            <ul>
+                               
+                                <!-- <li> id is :  {{ id }} </li> -->
+                                <!-- <li> testing : {{sentences|get_from_dict:id}} </li> -->
+                                <!-- {% with sentences|get_from_dict:id as dict %}
+                                <li>  Review  {{ id }}  :   {{dict.sentence_text }} </li>
+                                {% endwith %}
+                            </ul> -->
+                        
+                        <!-- {% endfor %} --> 
+
+                       
+                        {% if value.positive_sentence_ids %}
+                            <h3 class="post-subtitle">
+                                Number of Positive Reviews : {{ value.no_of_positive_sentences }}
+                            </h3> 
+
+                            {% for id in value.positive_sentence_ids %}
+                                <ul>
+                                   
+                                    <!-- <li> id is :  {{ id }} </li> -->
+                                    <!-- <li> testing : {{sentences|get_from_dict:id}} </li> -->
+                                    {% with sentences|get_from_dict:id as dict %}
+                                    <li>  Review  {{ id }}  :   {{dict.sentence_text }} </li>
+                                    {% endwith %}
+                                </ul>
+                            
+                            {% endfor %}
+                        {% endif %}
+
+                            
+                        {% if value.negative_sentence_ids %}
+
+                            <h3 class="post-subtitle">
+                               Number of Negative Reviews : {{ value.no_of_negative_sentences }}
+                            </h3> 
+                            
+                            {% for id in value.negative_sentence_ids %}
+                                <ul>
+                                   
+                                    <!-- <li> id is :  {{ id }} </li> -->
+                                    <!-- <li> testing : {{sentences|get_from_dict:id}} </li> -->
+                                    {% with sentences|get_from_dict:id as dict %}
+                                    <li>  Review  {{ id }}  :   {{dict.sentence_text }} </li>
+                                    {% endwith %}
+                                </ul>
+                            
+                            {% endfor %}
+
+                        {% endif %}
+                    </div>
+                </div>
+                <hr>
+                {% endif %}
+             {% endfor%}   
+                
+                
+                <!-- Pager -->
+                <ul class="pager">
+                    <li class="next">
+                        <a href="#">Older Posts &rarr;</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div> 
+
+
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+   <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+   <div id="container"></div>
+
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+                        <li>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted">Copyright &copy; Your Website 2016</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+</body>
+
+</html>

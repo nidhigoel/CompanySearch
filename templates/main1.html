@@ -1,0 +1,44 @@
+{% load i18n %} 
+{% include 'header.html' %}
+{% load app_filter %}
+
+</div>
+    <!-- Main Content -->
+    <div class="container">
+        <div class = "row" > 
+            <label> Company Name : {{ name }} </label> <br>
+            {% if industryName %}
+            <label> Industry Name : {{ industryName|remove_and }} </label> <br>
+            {% endif %}
+            {% if sectorName %}
+            <label> Sector Name : {{ sectorName }} </label> <br>
+            {% endif %}
+            <label> Reviews : Total {{ no_of_sentences }} Reviews</label>  <br>
+             <table> 
+                <tr> 
+                    <td> <label> Rating : </label>  </td>
+                     
+                    <td>  <input id="input-id" name="input-name" type="number" class="rating" clearButton = "1"  showClear = "false"  clearButtonTitle = "click me"  min=0 max=5 step=0.5 data-size="xs" rtl = "true" data-rtl="false"   
+                    value = '{{ overallRating }}'   readOnly = "false"  displayOnly = "false">
+                    
+                    </td>
+                </tr>
+              </table>
+
+            <label> Description : {{ description|caps_filter }} </label> <br> 
+            <label>  Website : <a href = "http://{{ website }}" > {{ website }} </a> </label>
+           
+            </div>
+
+       
+    </div>
+
+    <hr>
+
+    <!-- Footer -->
+    {% include 'footer.html' %}
+
+    
+</body>
+
+</html>

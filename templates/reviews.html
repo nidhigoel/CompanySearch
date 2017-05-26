@@ -1,0 +1,68 @@
+{% load i18n %} 
+{% include 'header.html' %}
+{% load app_filter %}
+{% load staticfiles %}
+<link rel="stylesheet" href="/static/css/w3.css">
+
+<div class = "container">
+
+ <div class="row">
+            <div class="col-lg-12 col-lg-offset-0 col-md-12 col-md-offset-0">
+            
+            {% for key , value in sentences.items %}
+            <div class="w3-panel w3-border w3-pale-grey w3-border-blue">
+                <div class="post-preview">
+                		<div class="w3-panel w3-leftbar w3-sand w3-xxlarge w3-serif">
+                		    <p><i>{{ value.sentence_text|remove_quotes|caps_filter}}</i></p>
+                		  </div>
+                    	
+                        <!-- <h2 class="post-title" class="panel panel-primary">
+                            {{ value.sentence_text|remove_quotes}}
+                        </h2> -->
+                        <h3 class="post-subtitle">
+                           Sentiment :  {{ value.sentiment|sentiment_filter  }}
+                        </h3> 
+                        <h3 class="post-subtitle">
+                           Features : {{ value.features.no_of_features }}
+                        </h3> 
+                        <ol> 
+                          
+                          {%  for feature_name , feature_value in value.features.items %}
+                           {%  if feature_name != 'no_of_features' %}
+                              <li> {{ feature_name|caps_filter }} : {{ feature_value.sentiment   }} 
+                                 {% for opinion_word , opinion_word_sentiment in feature_value.items %}
+                                 <ul> 
+                                    {% if opinion_word != 'sentiment' %}
+                                      <li> {{ opinion_word|caps_filter }} : {{ opinion_word_sentiment  }} </li>
+                                    {% endif %}
+                                 </ul>
+                               
+                               {% endfor %}
+                               </li>
+                            {% endif %}
+
+                          {% endfor %}
+
+                        </ol>
+                    </a>
+                    <p class="post-meta">Posted  on {{ value.time|date_filter }}</p>
+                </div>
+                 </div>
+                <hr>
+
+             {% endfor%}   
+               
+                
+                <!-- Pager -->
+                <ul class="pager">
+                    <li class="next">
+                        <a href="#">Older Posts &rarr;</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+</div>
+
+
+  <!-- Footer -->
+    {% include 'footer.html' %}

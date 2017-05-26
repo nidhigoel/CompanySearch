@@ -1,0 +1,46 @@
+{% load i18n %} 
+{% include 'header.html' %}
+{% load app_filter %}
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="http://code.highcharts.com/highcharts.js"></script>
+</head>
+<body>
+
+
+
+
+<div id="chart_container" style="width:80%; height:400px;"></div>
+
+<script type = "text/javascript">
+var a = "{{ name }}";
+alert("{{  yearlydata|safe }}");
+
+
+$(function () 
+{   
+	$('#chart_container').highcharts(
+	{
+		chart: {
+		type: 'line'
+		},
+		title: 
+			{
+			text: 'Half Yearly view'
+			},
+		xAxis: 
+			{ 
+				categories: ['Jan', 'Feb', 'Mar','Apr' ,'May','Aug' ]
+			},
+		yAxis: {
+			title: {
+					text: 'numbers'
+					}
+			},
+		series: [ {name: 'John', data: [1, 0, 4,6]	}, 
+		 		  {name: 'King', data: [5, 7, 3]}
+ 		]
+	});
+});
+</script>
+</body>
