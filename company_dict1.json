@@ -1,1 +1,1707 @@
-{"name": "Amazon", "industryName": "General Merchandise &amp; Superstores", "ratingDescription": "Satisfied", "no_of_sentences": 2, "overallRating": "3.5", "description": "some brief description about company from wikipedia", "website": "www.amazon.jobs", "sentences": {"1": {"sentiment": 1, "time": "2009-05-23 00:00:00", "features": {"no_of_features": 5,"mentoring focus": {"sentiment": 1, "new": 1, "experienced": 1, "mentoring": 1, "strong": 1, "good": 2, "great": 1, "sincere": 2}, "employees": {"too": -1, "sentiment": 1, "Great": 1}, "experience": {"too": -1, "sentiment": 1, "Great": 1}, "customer experience": {"too": -1, "sentiment": 1, "Great": 1}, "Great customer experience": {"too": -1, "sentiment": 1, "Great": 1}}, "sentence_text": "\"\"Google: change is needed to avoid complacency & loss of competitive edge\"\""}, "2": {"sentiment": 1, "time": "2009-05-23 00:00:00", "features": {"customers": {"sentiment": 1, "new": 1, "experienced": 1, "mentoring": 1, "strong": 1, "good": 2, "great": 1, "sincere": 2}, "no_of_features": 3, "mentoring focus": {"sentiment": 1, "new": 1, "experienced": 1, "mentoring": 1, "strong": 1, "good": 2, "great": 1, "sincere": 2}, "management": {"sentiment": 1, "new": 1, "experienced": 1, "mentoring": 1, "strong": 1, "good": 2, "great": 1, "sincere": 2}}, "sentence_text": "\"2 types of people that will find a great place to work: (1) recent college or B-school graduates looking for a first job where they can learn a lot, and (2) more senior corporate executives with many years of experience who aren't overly ambitious and are looking for a role where they can put life on auto-pilot and glide through their day-to-day activities.\""}}, "sectorName": "Retail","feature_json":{"mentoring focus": {"sentence_ids": ["1", "2"], "no_of_sentences": 2, "sentiment": 2}, "customer experience": {"sentence_ids": ["1"], "no_of_sentences": 1, "sentiment": 1}, "customers": {"sentence_ids": ["2"], "no_of_sentences": 1, "sentiment": 1}, "Great customer experience": {"sentence_ids": ["1"], "no_of_sentences": 1, "sentiment": 1}, "employees": {"sentence_ids": ["1"], "no_of_sentences": 1, "sentiment": 1}, "experience": {"sentence_ids": ["1"], "no_of_sentences": 1, "sentiment": 1}, "management": {"sentence_ids": ["2"], "no_of_sentences": 1, "sentiment": 1}}}
+{
+  "ratingDescription": "Satisfied",
+  "industryName": "",
+  "feature_json": {
+    "career development": {
+      "no_of_positive_sentences": 0,
+      "positive_sentence_ids": [],
+      "no_of_sentences": 1,
+      "sentiment": -1.0,
+      "sentence_ids": [
+        "4686"
+      ],
+      "negative_sentence_ids": [
+        "4686"
+      ],
+      "no_of_negative_sentences": 1
+    },
+    "challenges": {
+      "no_of_positive_sentences": 1,
+      "positive_sentence_ids": [
+        "4607"
+      ],
+      "no_of_sentences": 1,
+      "sentiment": 1.0,
+      "sentence_ids": [
+        "4607"
+      ],
+      "negative_sentence_ids": [],
+      "no_of_negative_sentences": 0
+    },
+    "organisation": {
+      "no_of_positive_sentences": 1,
+      "positive_sentence_ids": [
+        "3759"
+      ],
+      "no_of_sentences": 1,
+      "sentiment": 0.5597222222222222,
+      "sentence_ids": [
+        "3759"
+      ],
+      "negative_sentence_ids": [],
+      "no_of_negative_sentences": 0
+    },
+    "employee": {
+      "no_of_positive_sentences": 1,
+      "positive_sentence_ids": [
+        "2214"
+      ],
+      "no_of_sentences": 1,
+      "sentiment": 1.0,
+      "sentence_ids": [
+        "2214"
+      ],
+      "negative_sentence_ids": [],
+      "no_of_negative_sentences": 0
+    },
+    "hours": {
+      "no_of_positive_sentences": 1,
+      "positive_sentence_ids": [
+        "2873"
+      ],
+      "no_of_sentences": 1,
+      "sentiment": 1.0,
+      "sentence_ids": [
+        "2873"
+      ],
+      "negative_sentence_ids": [],
+      "no_of_negative_sentences": 0
+    },
+    "work culture": {
+      "no_of_positive_sentences": 1,
+      "positive_sentence_ids": [
+        "1232"
+      ],
+      "no_of_sentences": 1,
+      "sentiment": 0.875,
+      "sentence_ids": [
+        "1232"
+      ],
+      "negative_sentence_ids": [],
+      "no_of_negative_sentences": 0
+    },
+    "managers": {
+      "no_of_positive_sentences": 1,
+      "positive_sentence_ids": [
+        "973"
+      ],
+      "no_of_sentences": 1,
+      "sentiment": 1.0,
+      "sentence_ids": [
+        "973"
+      ],
+      "negative_sentence_ids": [],
+      "no_of_negative_sentences": 0
+    },
+    "freshers": {
+      "no_of_positive_sentences": 1,
+      "positive_sentence_ids": [
+        "2758"
+      ],
+      "no_of_sentences": 1,
+      "sentiment": 1.0,
+      "sentence_ids": [
+        "2758"
+      ],
+      "negative_sentence_ids": [],
+      "no_of_negative_sentences": 0
+    },
+    "company": {
+      "no_of_positive_sentences": 1,
+      "positive_sentence_ids": [
+        "2758"
+      ],
+      "no_of_sentences": 1,
+      "sentiment": 0.5694444444444444,
+      "sentence_ids": [
+        "2758"
+      ],
+      "negative_sentence_ids": [],
+      "no_of_negative_sentences": 0
+    },
+    "environment": {
+      "no_of_positive_sentences": 3,
+      "positive_sentence_ids": [
+        "1344",
+        "2214",
+        "973"
+      ],
+      "no_of_sentences": 3,
+      "sentiment": 0.6944444444444445,
+      "sentence_ids": [
+        "1344",
+        "2214",
+        "973"
+      ],
+      "negative_sentence_ids": [],
+      "no_of_negative_sentences": 0
+    },
+    "place": {
+      "no_of_positive_sentences": 3,
+      "positive_sentence_ids": [
+        "1952",
+        "3762",
+        "1622"
+      ],
+      "no_of_sentences": 3,
+      "sentiment": 0.6620370370370371,
+      "sentence_ids": [
+        "1952",
+        "3762",
+        "1622"
+      ],
+      "negative_sentence_ids": [],
+      "no_of_negative_sentences": 0
+    },
+    "code": {
+      "no_of_positive_sentences": 1,
+      "positive_sentence_ids": [
+        "3759"
+      ],
+      "no_of_sentences": 1,
+      "sentiment": 1.0,
+      "sentence_ids": [
+        "3759"
+      ],
+      "negative_sentence_ids": [],
+      "no_of_negative_sentences": 0
+    },
+    "benefits": {
+      "no_of_positive_sentences": 1,
+      "positive_sentence_ids": [
+        "973"
+      ],
+      "no_of_sentences": 1,
+      "sentiment": 1.0,
+      "sentence_ids": [
+        "973"
+      ],
+      "negative_sentence_ids": [],
+      "no_of_negative_sentences": 0
+    },
+    "Timings": {
+      "no_of_positive_sentences": 1,
+      "positive_sentence_ids": [
+        "764"
+      ],
+      "no_of_sentences": 1,
+      "sentiment": 0.15,
+      "sentence_ids": [
+        "764"
+      ],
+      "negative_sentence_ids": [],
+      "no_of_negative_sentences": 0
+    },
+    "customer experience": {
+      "no_of_positive_sentences": 1,
+      "positive_sentence_ids": [
+        "1"
+      ],
+      "no_of_sentences": 1,
+      "sentiment": 0.26785714285714285,
+      "sentence_ids": [
+        "1"
+      ],
+      "negative_sentence_ids": [],
+      "no_of_negative_sentences": 0
+    },
+    "work": {
+      "no_of_positive_sentences": 1,
+      "positive_sentence_ids": [
+        "973"
+      ],
+      "no_of_sentences": 1,
+      "sentiment": 0.6694444444444444,
+      "sentence_ids": [
+        "973"
+      ],
+      "negative_sentence_ids": [],
+      "no_of_negative_sentences": 0
+    },
+    "growth path": {
+      "no_of_positive_sentences": 1,
+      "positive_sentence_ids": [
+        "1698"
+      ],
+      "no_of_sentences": 1,
+      "sentiment": 0.5694444444444444,
+      "sentence_ids": [
+        "1698"
+      ],
+      "negative_sentence_ids": [],
+      "no_of_negative_sentences": 0
+    },
+    "Helps": {
+      "no_of_positive_sentences": 1,
+      "positive_sentence_ids": [
+        "2182"
+      ],
+      "no_of_sentences": 1,
+      "sentiment": 1.0,
+      "sentence_ids": [
+        "2182"
+      ],
+      "negative_sentence_ids": [],
+      "no_of_negative_sentences": 0
+    },
+    "values": {
+      "no_of_positive_sentences": 0,
+      "positive_sentence_ids": [],
+      "no_of_sentences": 1,
+      "sentiment": 0.225,
+      "sentence_ids": [
+        "1613"
+      ],
+      "negative_sentence_ids": [
+        "1613"
+      ],
+      "no_of_negative_sentences": 1
+    },
+    "work environment": {
+      "no_of_positive_sentences": 1,
+      "positive_sentence_ids": [
+        "973"
+      ],
+      "no_of_sentences": 1,
+      "sentiment": 0.08333333333333333,
+      "sentence_ids": [
+        "973"
+      ],
+      "negative_sentence_ids": [],
+      "no_of_negative_sentences": 0
+    },
+    "path": {
+      "no_of_positive_sentences": 1,
+      "positive_sentence_ids": [
+        "1698"
+      ],
+      "no_of_sentences": 1,
+      "sentiment": 0.2847222222222222,
+      "sentence_ids": [
+        "1698"
+      ],
+      "negative_sentence_ids": [],
+      "no_of_negative_sentences": 0
+    },
+    "priciples": {
+      "no_of_positive_sentences": 0,
+      "positive_sentence_ids": [],
+      "no_of_sentences": 1,
+      "sentiment": -1.0,
+      "sentence_ids": [
+        "1613"
+      ],
+      "negative_sentence_ids": [
+        "1613"
+      ],
+      "no_of_negative_sentences": 1
+    },
+    "Good growth": {
+      "no_of_positive_sentences": 1,
+      "positive_sentence_ids": [
+        "1698"
+      ],
+      "no_of_sentences": 1,
+      "sentiment": 1.0,
+      "sentence_ids": [
+        "1698"
+      ],
+      "negative_sentence_ids": [],
+      "no_of_negative_sentences": 0
+    },
+    "friendly organisation": {
+      "no_of_positive_sentences": 1,
+      "positive_sentence_ids": [
+        "3759"
+      ],
+      "no_of_sentences": 1,
+      "sentiment": 0.5694444444444444,
+      "sentence_ids": [
+        "3759"
+      ],
+      "negative_sentence_ids": [],
+      "no_of_negative_sentences": 0
+    },
+    "things": {
+      "no_of_positive_sentences": 1,
+      "positive_sentence_ids": [
+        "1344"
+      ],
+      "no_of_sentences": 2,
+      "sentiment": 0.0,
+      "sentence_ids": [
+        "1344",
+        "2061"
+      ],
+      "negative_sentence_ids": [
+        "2061"
+      ],
+      "no_of_negative_sentences": 1
+    },
+    "Investigator": {
+      "no_of_positive_sentences": 0,
+      "positive_sentence_ids": [],
+      "no_of_sentences": 1,
+      "sentiment": -0.20833333333333334,
+      "sentence_ids": [
+        "5539"
+      ],
+      "negative_sentence_ids": [
+        "5539"
+      ],
+      "no_of_negative_sentences": 1
+    },
+    "organization": {
+      "no_of_positive_sentences": 1,
+      "positive_sentence_ids": [
+        "2182"
+      ],
+      "no_of_sentences": 1,
+      "sentiment": 0.26785714285714285,
+      "sentence_ids": [
+        "2182"
+      ],
+      "negative_sentence_ids": [],
+      "no_of_negative_sentences": 0
+    },
+    "process": {
+      "no_of_positive_sentences": 1,
+      "positive_sentence_ids": [
+        "2182"
+      ],
+      "no_of_sentences": 1,
+      "sentiment": 1.0,
+      "sentence_ids": [
+        "2182"
+      ],
+      "negative_sentence_ids": [],
+      "no_of_negative_sentences": 0
+    },
+    "employee learning": {
+      "no_of_positive_sentences": 0,
+      "positive_sentence_ids": [],
+      "no_of_sentences": 1,
+      "sentiment": -1.0,
+      "sentence_ids": [
+        "4686"
+      ],
+      "negative_sentence_ids": [
+        "4686"
+      ],
+      "no_of_negative_sentences": 1
+    },
+    "Flexibility": {
+      "no_of_positive_sentences": 1,
+      "positive_sentence_ids": [
+        "2873"
+      ],
+      "no_of_sentences": 1,
+      "sentiment": 1.0,
+      "sentence_ids": [
+        "2873"
+      ],
+      "negative_sentence_ids": [],
+      "no_of_negative_sentences": 0
+    },
+    "casual environment": {
+      "no_of_positive_sentences": 1,
+      "positive_sentence_ids": [
+        "2214"
+      ],
+      "no_of_sentences": 1,
+      "sentiment": 1.0,
+      "sentence_ids": [
+        "2214"
+      ],
+      "negative_sentence_ids": [],
+      "no_of_negative_sentences": 0
+    },
+    "build products": {
+      "no_of_positive_sentences": 1,
+      "positive_sentence_ids": [
+        "764"
+      ],
+      "no_of_sentences": 1,
+      "sentiment": 1.0,
+      "sentence_ids": [
+        "764"
+      ],
+      "negative_sentence_ids": [],
+      "no_of_negative_sentences": 0
+    },
+    "roles": {
+      "no_of_positive_sentences": 0,
+      "positive_sentence_ids": [],
+      "no_of_sentences": 1,
+      "sentiment": 0.10714285714285714,
+      "sentence_ids": [
+        "3624"
+      ],
+      "negative_sentence_ids": [
+        "3624"
+      ],
+      "no_of_negative_sentences": 1
+    },
+    "college": {
+      "no_of_positive_sentences": 1,
+      "positive_sentence_ids": [
+        "2758"
+      ],
+      "no_of_sentences": 1,
+      "sentiment": 1.0,
+      "sentence_ids": [
+        "2758"
+      ],
+      "negative_sentence_ids": [],
+      "no_of_negative_sentences": 0
+    },
+    "period-end times": {
+      "no_of_positive_sentences": 1,
+      "positive_sentence_ids": [
+        "2182"
+      ],
+      "no_of_sentences": 1,
+      "sentiment": 1.0,
+      "sentence_ids": [
+        "2182"
+      ],
+      "negative_sentence_ids": [],
+      "no_of_negative_sentences": 0
+    },
+    "growth": {
+      "no_of_positive_sentences": 0,
+      "positive_sentence_ids": [],
+      "no_of_sentences": 1,
+      "sentiment": -1.0,
+      "sentence_ids": [
+        "3538"
+      ],
+      "negative_sentence_ids": [
+        "3538"
+      ],
+      "no_of_negative_sentences": 1
+    },
+    "bar": {
+      "no_of_positive_sentences": 0,
+      "positive_sentence_ids": [],
+      "no_of_sentences": 1,
+      "sentiment": -1.0,
+      "sentence_ids": [
+        "4686"
+      ],
+      "negative_sentence_ids": [
+        "4686"
+      ],
+      "no_of_negative_sentences": 1
+    },
+    "step": {
+      "no_of_positive_sentences": 0,
+      "positive_sentence_ids": [],
+      "no_of_sentences": 1,
+      "sentiment": 0.026785714285714284,
+      "sentence_ids": [
+        "3624"
+      ],
+      "negative_sentence_ids": [
+        "3624"
+      ],
+      "no_of_negative_sentences": 1
+    },
+    "Customer": {
+      "no_of_positive_sentences": 1,
+      "positive_sentence_ids": [
+        "764"
+      ],
+      "no_of_sentences": 1,
+      "sentiment": 1.0,
+      "sentence_ids": [
+        "764"
+      ],
+      "negative_sentence_ids": [],
+      "no_of_negative_sentences": 0
+    },
+    "part": {
+      "no_of_positive_sentences": 2,
+      "positive_sentence_ids": [
+        "2182",
+        "973"
+      ],
+      "no_of_sentences": 2,
+      "sentiment": 0.7504883720930233,
+      "sentence_ids": [
+        "2182",
+        "973"
+      ],
+      "negative_sentence_ids": [],
+      "no_of_negative_sentences": 0
+    },
+    "culture": {
+      "no_of_positive_sentences": 1,
+      "positive_sentence_ids": [
+        "1232"
+      ],
+      "no_of_sentences": 1,
+      "sentiment": 0.4375,
+      "sentence_ids": [
+        "1232"
+      ],
+      "negative_sentence_ids": [],
+      "no_of_negative_sentences": 0
+    },
+    "schedules": {
+      "no_of_positive_sentences": 1,
+      "positive_sentence_ids": [
+        "973"
+      ],
+      "no_of_sentences": 1,
+      "sentiment": 1.0,
+      "sentence_ids": [
+        "973"
+      ],
+      "negative_sentence_ids": [],
+      "no_of_negative_sentences": 0
+    },
+    "engineer": {
+      "no_of_positive_sentences": 0,
+      "positive_sentence_ids": [],
+      "no_of_sentences": 1,
+      "sentiment": 0.05113636363636364,
+      "sentence_ids": [
+        "1251"
+      ],
+      "negative_sentence_ids": [
+        "1251"
+      ],
+      "no_of_negative_sentences": 1
+    },
+    "career": {
+      "no_of_positive_sentences": 1,
+      "positive_sentence_ids": [
+        "2182"
+      ],
+      "no_of_sentences": 1,
+      "sentiment": 1.0,
+      "sentence_ids": [
+        "2182"
+      ],
+      "negative_sentence_ids": [],
+      "no_of_negative_sentences": 0
+    },
+    "Peer group": {
+      "no_of_positive_sentences": 0,
+      "positive_sentence_ids": [],
+      "no_of_sentences": 1,
+      "sentiment": -1.0,
+      "sentence_ids": [
+        "4686"
+      ],
+      "negative_sentence_ids": [
+        "4686"
+      ],
+      "no_of_negative_sentences": 1
+    },
+    "learning": {
+      "no_of_positive_sentences": 0,
+      "positive_sentence_ids": [],
+      "no_of_sentences": 1,
+      "sentiment": -1.0,
+      "sentence_ids": [
+        "4686"
+      ],
+      "negative_sentence_ids": [
+        "4686"
+      ],
+      "no_of_negative_sentences": 1
+    },
+    "Environment": {
+      "no_of_positive_sentences": 1,
+      "positive_sentence_ids": [
+        "2218"
+      ],
+      "no_of_sentences": 1,
+      "sentiment": 0.2847222222222222,
+      "sentence_ids": [
+        "2218"
+      ],
+      "negative_sentence_ids": [],
+      "no_of_negative_sentences": 0
+    },
+    "experiance": {
+      "no_of_positive_sentences": 0,
+      "positive_sentence_ids": [],
+      "no_of_sentences": 1,
+      "sentiment": -0.625,
+      "sentence_ids": [
+        "1251"
+      ],
+      "negative_sentence_ids": [
+        "1251"
+      ],
+      "no_of_negative_sentences": 1
+    },
+    "time": {
+      "no_of_positive_sentences": 0,
+      "positive_sentence_ids": [],
+      "no_of_sentences": 1,
+      "sentiment": -1.0,
+      "sentence_ids": [
+        "2061"
+      ],
+      "negative_sentence_ids": [
+        "2061"
+      ],
+      "no_of_negative_sentences": 1
+    },
+    "Finance teams": {
+      "no_of_positive_sentences": 1,
+      "positive_sentence_ids": [
+        "2182"
+      ],
+      "no_of_sentences": 1,
+      "sentiment": 1.0,
+      "sentence_ids": [
+        "2182"
+      ],
+      "negative_sentence_ids": [],
+      "no_of_negative_sentences": 0
+    },
+    "new things": {
+      "no_of_positive_sentences": 1,
+      "positive_sentence_ids": [
+        "1344"
+      ],
+      "no_of_sentences": 1,
+      "sentiment": 1.0,
+      "sentence_ids": [
+        "1344"
+      ],
+      "negative_sentence_ids": [],
+      "no_of_negative_sentences": 0
+    },
+    "Ability": {
+      "no_of_positive_sentences": 1,
+      "positive_sentence_ids": [
+        "2182"
+      ],
+      "no_of_sentences": 1,
+      "sentiment": 1.0,
+      "sentence_ids": [
+        "2182"
+      ],
+      "negative_sentence_ids": [],
+      "no_of_negative_sentences": 0
+    },
+    "role": {
+      "no_of_positive_sentences": 0,
+      "positive_sentence_ids": [],
+      "no_of_sentences": 1,
+      "sentiment": -1.0,
+      "sentence_ids": [
+        "4686"
+      ],
+      "negative_sentence_ids": [
+        "4686"
+      ],
+      "no_of_negative_sentences": 1
+    },
+    "for freshers": {
+      "no_of_positive_sentences": 1,
+      "positive_sentence_ids": [
+        "2758"
+      ],
+      "no_of_sentences": 1,
+      "sentiment": 1.0,
+      "sentence_ids": [
+        "2758"
+      ],
+      "negative_sentence_ids": [],
+      "no_of_negative_sentences": 0
+    },
+    "Expectation": {
+      "no_of_positive_sentences": 0,
+      "positive_sentence_ids": [],
+      "no_of_sentences": 1,
+      "sentiment": -1.0,
+      "sentence_ids": [
+        "4686"
+      ],
+      "negative_sentence_ids": [
+        "4686"
+      ],
+      "no_of_negative_sentences": 1
+    },
+    "development": {
+      "no_of_positive_sentences": 0,
+      "positive_sentence_ids": [],
+      "no_of_sentences": 1,
+      "sentiment": -1.0,
+      "sentence_ids": [
+        "4686"
+      ],
+      "negative_sentence_ids": [
+        "4686"
+      ],
+      "no_of_negative_sentences": 1
+    },
+    "moment": {
+      "no_of_positive_sentences": 1,
+      "positive_sentence_ids": [
+        "4607"
+      ],
+      "no_of_sentences": 1,
+      "sentiment": -0.16447368421052633,
+      "sentence_ids": [
+        "4607"
+      ],
+      "negative_sentence_ids": [],
+      "no_of_negative_sentences": 0
+    },
+    "work pressure": {
+      "no_of_positive_sentences": 0,
+      "positive_sentence_ids": [],
+      "no_of_sentences": 1,
+      "sentiment": 0.09027777777777778,
+      "sentence_ids": [
+        "3538"
+      ],
+      "negative_sentence_ids": [
+        "3538"
+      ],
+      "no_of_negative_sentences": 1
+    },
+    "times": {
+      "no_of_positive_sentences": 1,
+      "positive_sentence_ids": [
+        "2182"
+      ],
+      "no_of_sentences": 1,
+      "sentiment": 1.0,
+      "sentence_ids": [
+        "2182"
+      ],
+      "negative_sentence_ids": [],
+      "no_of_negative_sentences": 0
+    },
+    "Work Good": {
+      "no_of_positive_sentences": 1,
+      "positive_sentence_ids": [
+        "1698"
+      ],
+      "no_of_sentences": 1,
+      "sentiment": 0.5694444444444444,
+      "sentence_ids": [
+        "1698"
+      ],
+      "negative_sentence_ids": [],
+      "no_of_negative_sentences": 0
+    },
+    "mentorship": {
+      "no_of_positive_sentences": 0,
+      "positive_sentence_ids": [],
+      "no_of_sentences": 1,
+      "sentiment": -0.4166666666666667,
+      "sentence_ids": [
+        "4686"
+      ],
+      "negative_sentence_ids": [
+        "4686"
+      ],
+      "no_of_negative_sentences": 1
+    },
+    "Peers": {
+      "no_of_positive_sentences": 1,
+      "positive_sentence_ids": [
+        "1698"
+      ],
+      "no_of_sentences": 1,
+      "sentiment": 1.0,
+      "sentence_ids": [
+        "1698"
+      ],
+      "negative_sentence_ids": [],
+      "no_of_negative_sentences": 0
+    },
+    "medical benefits": {
+      "no_of_positive_sentences": 1,
+      "positive_sentence_ids": [
+        "973"
+      ],
+      "no_of_sentences": 1,
+      "sentiment": 1.0,
+      "sentence_ids": [
+        "973"
+      ],
+      "negative_sentence_ids": [],
+      "no_of_negative_sentences": 0
+    },
+    "services": {
+      "no_of_positive_sentences": 1,
+      "positive_sentence_ids": [
+        "2182"
+      ],
+      "no_of_sentences": 1,
+      "sentiment": 1.0,
+      "sentence_ids": [
+        "2182"
+      ],
+      "negative_sentence_ids": [],
+      "no_of_negative_sentences": 0
+    },
+    "notch": {
+      "no_of_positive_sentences": 1,
+      "positive_sentence_ids": [
+        "973"
+      ],
+      "no_of_sentences": 1,
+      "sentiment": 0.045454545454545456,
+      "sentence_ids": [
+        "973"
+      ],
+      "negative_sentence_ids": [],
+      "no_of_negative_sentences": 0
+    },
+    "customer": {
+      "no_of_positive_sentences": 2,
+      "positive_sentence_ids": [
+        "1",
+        "764"
+      ],
+      "no_of_sentences": 2,
+      "sentiment": 0.19548160173160173,
+      "sentence_ids": [
+        "1",
+        "764"
+      ],
+      "negative_sentence_ids": [],
+      "no_of_negative_sentences": 0
+    },
+    "office": {
+      "no_of_positive_sentences": 1,
+      "positive_sentence_ids": [
+        "973"
+      ],
+      "no_of_sentences": 1,
+      "sentiment": 1.0,
+      "sentence_ids": [
+        "973"
+      ],
+      "negative_sentence_ids": [],
+      "no_of_negative_sentences": 0
+    },
+    "products": {
+      "no_of_positive_sentences": 1,
+      "positive_sentence_ids": [
+        "764"
+      ],
+      "no_of_sentences": 1,
+      "sentiment": 1.0,
+      "sentence_ids": [
+        "764"
+      ],
+      "negative_sentence_ids": [],
+      "no_of_negative_sentences": 0
+    },
+    "Competitive": {
+      "no_of_positive_sentences": 1,
+      "positive_sentence_ids": [
+        "764"
+      ],
+      "no_of_sentences": 1,
+      "sentiment": 1.0,
+      "sentence_ids": [
+        "764"
+      ],
+      "negative_sentence_ids": [],
+      "no_of_negative_sentences": 0
+    },
+    "work schedules": {
+      "no_of_positive_sentences": 1,
+      "positive_sentence_ids": [
+        "973"
+      ],
+      "no_of_sentences": 1,
+      "sentiment": 1.0,
+      "sentence_ids": [
+        "973"
+      ],
+      "negative_sentence_ids": [],
+      "no_of_negative_sentences": 0
+    },
+    "Pay": {
+      "no_of_positive_sentences": 1,
+      "positive_sentence_ids": [
+        "764"
+      ],
+      "no_of_sentences": 1,
+      "sentiment": 0.375,
+      "sentence_ids": [
+        "764"
+      ],
+      "negative_sentence_ids": [],
+      "no_of_negative_sentences": 0
+    },
+    "people": {
+      "no_of_positive_sentences": 1,
+      "positive_sentence_ids": [
+        "2873"
+      ],
+      "no_of_sentences": 2,
+      "sentiment": 0.0,
+      "sentence_ids": [
+        "2873",
+        "2061"
+      ],
+      "negative_sentence_ids": [
+        "2061"
+      ],
+      "no_of_negative_sentences": 1
+    },
+    "dress code": {
+      "no_of_positive_sentences": 1,
+      "positive_sentence_ids": [
+        "3759"
+      ],
+      "no_of_sentences": 1,
+      "sentiment": 1.0,
+      "sentence_ids": [
+        "3759"
+      ],
+      "negative_sentence_ids": [],
+      "no_of_negative_sentences": 0
+    },
+    "way": {
+      "no_of_positive_sentences": 0,
+      "positive_sentence_ids": [],
+      "no_of_sentences": 1,
+      "sentiment": -1.0,
+      "sentence_ids": [
+        "2061"
+      ],
+      "negative_sentence_ids": [
+        "2061"
+      ],
+      "no_of_negative_sentences": 1
+    },
+    "teams": {
+      "no_of_positive_sentences": 1,
+      "positive_sentence_ids": [
+        "2182"
+      ],
+      "no_of_sentences": 1,
+      "sentiment": 1.0,
+      "sentence_ids": [
+        "2182"
+      ],
+      "negative_sentence_ids": [],
+      "no_of_negative_sentences": 0
+    },
+    "pressure": {
+      "no_of_positive_sentences": 0,
+      "positive_sentence_ids": [],
+      "no_of_sentences": 1,
+      "sentiment": -1.0,
+      "sentence_ids": [
+        "3538"
+      ],
+      "negative_sentence_ids": [
+        "3538"
+      ],
+      "no_of_negative_sentences": 1
+    },
+    "group": {
+      "no_of_positive_sentences": 0,
+      "positive_sentence_ids": [],
+      "no_of_sentences": 1,
+      "sentiment": -0.375,
+      "sentence_ids": [
+        "4686"
+      ],
+      "negative_sentence_ids": [
+        "4686"
+      ],
+      "no_of_negative_sentences": 1
+    }
+  },
+  "description": "some brief description about company from wikipedia",
+  "website": "www.amazon.jobs",
+  "no_of_sentences": 30,
+  "overallRating": 3.5,
+  "temporal_json": {
+    "1 Feb 2015 to 31 July 2015": {
+      "sentence_id": [
+        "1952",
+        "2061",
+        "1698"
+      ],
+      "sentiment": -0.3333333333333333
+    },
+    "1 Feb 2017 to 31 July 2017": {
+      "sentence_id": [
+        "5539"
+      ],
+      "sentiment": 0.0
+    },
+    "1 Aug 2016 to 31 Jan 2017": {
+      "sentence_id": [
+        "4607",
+        "4523",
+        "3759",
+        "4674",
+        "3762",
+        "4686"
+      ],
+      "sentiment": 0.0
+    },
+    "1 Aug 2013 to 31 Jan 2014": {
+      "sentence_id": [
+        "945",
+        "1",
+        "764"
+      ],
+      "sentiment": 0.0
+    },
+    "1 Feb 2016 to 31 July 2016": {
+      "sentence_id": [
+        "2873",
+        "3538",
+        "3624"
+      ],
+      "sentiment": 0.3333333333333333
+    },
+    "1 Aug 2015 to 31 Jan 2016": {
+      "sentence_id": [
+        "2182",
+        "2214",
+        "2763",
+        "2758",
+        "2218"
+      ],
+      "sentiment": 0.2
+    },
+    "1 Aug 2014 to 31 Jan 2015": {
+      "sentence_id": [
+        "1344",
+        "1613",
+        "1346",
+        "1343",
+        "1596",
+        "1622"
+      ],
+      "sentiment": 0.16666666666666666
+    },
+    "1 Feb 2014 to 31 July 2014": {
+      "sentence_id": [
+        "973",
+        "1251",
+        "1232"
+      ],
+      "sentiment": 0.0
+    }
+  },
+  "sentences": {
+    "2182": {
+      "sentence_text": "Great organization to be a part of. Finance teams in shared services especially get an insight into the process. Ability to test your potential in during period-end times. Helps you build your career.",
+      "time": "8/13/2015 0:00",
+      "sentiment": 0.9389880952380952,
+      "features": {
+        "times": {
+          "sentiment": 1,
+          "pro": 1
+        },
+        "career": {
+          "sentiment": 1,
+          "pro": 1
+        },
+        "part": {
+          "sentiment": 1,
+          "pro": 1
+        },
+        "services": {
+          "sentiment": 1,
+          "pro": 1
+        },
+        "organization": {
+          "sentiment": 0.26785714285714285,
+          "pro": 1,
+          "Great": 0.26785714285714285
+        },
+        "process": {
+          "sentiment": 1,
+          "pro": 1
+        },
+        "no_of_features": 11,
+        "Ability": {
+          "sentiment": 1,
+          "pro": 1
+        },
+        "teams": {
+          "sentiment": 1,
+          "pro": 1
+        },
+        "Helps": {
+          "sentiment": 1,
+          "pro": 1
+        },
+        "period-end times": {
+          "sentiment": 1,
+          "pro": 1
+        },
+        "Finance teams": {
+          "sentiment": 1,
+          "pro": 1
+        }
+      }
+    },
+    "4607": {
+      "sentence_text": "There is never a dull moment. Filled with challenges",
+      "time": "12/19/2016 0:00",
+      "sentiment": 0.6118421052631579,
+      "features": {
+        "moment": {
+          "dull": -0.16447368421052633,
+          "sentiment": -0.16447368421052633,
+          "pro": 1
+        },
+        "no_of_features": 2,
+        "challenges": {
+          "sentiment": 1,
+          "pro": 1
+        }
+      }
+    },
+    "945": {
+      "sentence_text": "Amazon--Challenging place to work for",
+      "time": "1/14/2014 0:00",
+      "sentiment": 0,
+      "features": {
+        "no_of_features": 0
+      }
+    },
+    "4523": {
+      "sentence_text": "worked at amazon for year",
+      "time": "12/2/2016 0:00",
+      "sentiment": 0,
+      "features": {
+        "no_of_features": 0
+      }
+    },
+    "3759": {
+      "sentence_text": "Good friendly organisation with no dress code.",
+      "time": "8/4/2016 0:00",
+      "sentiment": 0.6827777777777777,
+      "features": {
+        "dress code": {
+          "sentiment": 1,
+          "pro": 1
+        },
+        "organisation": {
+          "sentiment": 0.5597222222222222,
+          "Good": 0.5694444444444444,
+          "friendly": 0.275
+        },
+        "friendly organisation": {
+          "Good": 0.5694444444444444,
+          "sentiment": 0.5694444444444444
+        },
+        "no_of_features": 4,
+        "code": {
+          "sentiment": 1,
+          "pro": 1
+        }
+      }
+    },
+    "1344": {
+      "sentence_text": "new things to learn,competitive environment",
+      "time": "8/18/2014 0:00",
+      "sentiment": 1.0,
+      "features": {
+        "new things": {
+          "sentiment": 1,
+          "pro": 1
+        },
+        "environment": {
+          "sentiment": 1,
+          "pro": 1
+        },
+        "no_of_features": 3,
+        "things": {
+          "sentiment": 1,
+          "pro": 1
+        }
+      }
+    },
+    "2873": {
+      "sentence_text": "Flexibility of working hours Chilled out people",
+      "time": "2/7/2016 0:00",
+      "sentiment": 1.0,
+      "features": {
+        "Flexibility": {
+          "sentiment": 1,
+          "pro": 1
+        },
+        "hours": {
+          "sentiment": 1,
+          "pro": 1
+        },
+        "no_of_features": 3,
+        "people": {
+          "sentiment": 1,
+          "pro": 1
+        }
+      }
+    },
+    "5539": {
+      "sentence_text": "Risk Investigator",
+      "time": "5/15/2017 0:00",
+      "sentiment": -0.20833333333333334,
+      "features": {
+        "Investigator": {
+          "Risk": -0.20833333333333334,
+          "sentiment": -0.20833333333333334
+        },
+        "no_of_features": 1
+      }
+    },
+    "3538": {
+      "sentence_text": "high work pressure, no growth",
+      "time": "6/16/2016 0:00",
+      "sentiment": -0.7274305555555556,
+      "features": {
+        "growth": {
+          "con": -1,
+          "sentiment": -1
+        },
+        "no_of_features": 3,
+        "work pressure": {
+          "high": 0.09027777777777778,
+          "con": -1,
+          "sentiment": 0.09027777777777778
+        },
+        "pressure": {
+          "con": -1,
+          "sentiment": -1
+        }
+      }
+    },
+    "1613": {
+      "sentence_text": "not figured it out, have very strong values and priciples",
+      "time": "1/5/2015 0:00",
+      "sentiment": -0.5916666666666667,
+      "features": {
+        "priciples": {
+          "con": -1,
+          "sentiment": -1
+        },
+        "no_of_features": 2,
+        "values": {
+          "strong": 0.225,
+          "con": -1,
+          "sentiment": 0.225
+        }
+      }
+    },
+    "1952": {
+      "sentence_text": "good place to work",
+      "time": "6/4/2015 0:00",
+      "sentiment": 0.5694444444444444,
+      "features": {
+        "place": {
+          "good": 0.5694444444444444,
+          "sentiment": 0.5694444444444444
+        },
+        "no_of_features": 1
+      }
+    },
+    "3624": {
+      "sentence_text": "challenging roles at every step",
+      "time": "7/4/2016 0:00",
+      "sentiment": -0.2619047619047619,
+      "features": {
+        "step": {
+          "challenging": 0.10714285714285714,
+          "con": -1,
+          "sentiment": 0.026785714285714284
+        },
+        "no_of_features": 2,
+        "roles": {
+          "challenging": 0.10714285714285714,
+          "sentiment": 0.10714285714285714
+        }
+      }
+    },
+    "1": {
+      "sentence_text": "Great customer experience but give some of it to employees too",
+      "time": "12/26/2008 0:00",
+      "sentiment": 0.26785714285714285,
+      "features": {
+        "customer": {
+          "sentiment": 0.26785714285714285,
+          "Great": 0.26785714285714285
+        },
+        "no_of_features": 2,
+        "customer experience": {
+          "sentiment": 0.26785714285714285,
+          "Great": 0.26785714285714285
+        }
+      }
+    },
+    "2214": {
+      "sentence_text": "Friendly and casual environment. Each and every employee is treated equal.",
+      "time": "8/20/2015 0:00",
+      "sentiment": 1.0,
+      "features": {
+        "environment": {
+          "sentiment": 1,
+          "pro": 1
+        },
+        "employee": {
+          "sentiment": 1,
+          "pro": 1
+        },
+        "no_of_features": 3,
+        "casual environment": {
+          "sentiment": 1,
+          "pro": 1
+        }
+      }
+    },
+    "764": {
+      "sentence_text": "1) Learn how to value customer and build products by starting with Customer. 2) Reasonable Pay. Not Competitive. 3) Flexible Timings.",
+      "time": "8/31/2013 0:00",
+      "sentiment": 0.7009641873278237,
+      "features": {
+        "products": {
+          "sentiment": 1,
+          "pro": 1
+        },
+        "Competitive": {
+          "sentiment": 1,
+          "pro": 1
+        },
+        "build products": {
+          "sentiment": 1,
+          "pro": 1
+        },
+        "Customer": {
+          "sentiment": 1,
+          "pro": 1
+        },
+        "Pay": {
+          "Reasonable": 0.375,
+          "sentiment": 0.375,
+          "pro": 1
+        },
+        "Timings": {
+          "Flexible": 0.15,
+          "sentiment": 0.15,
+          "pro": 1
+        },
+        "customer": {
+          "value": 0.10227272727272728,
+          "Learn": 0.08333333333333333,
+          "sentiment": 0.12310606060606061,
+          "pro": 1
+        },
+        "no_of_features": 7
+      }
+    },
+    "1346": {
+      "sentence_text": "Work hard. Have Fun. Make History.",
+      "time": "8/19/2014 0:00",
+      "sentiment": 0,
+      "features": {
+        "no_of_features": 0
+      }
+    },
+    "1343": {
+      "sentence_text": "Awsm company to work",
+      "time": "8/18/2014 0:00",
+      "sentiment": 0,
+      "features": {
+        "no_of_features": 0
+      }
+    },
+    "2061": {
+      "sentence_text": "You have to chase people to know how to do things when you are new. It helps but time is not best utilized in this way.",
+      "time": "7/6/2015 0:00",
+      "sentiment": -1.0,
+      "features": {
+        "things": {
+          "con": -1,
+          "sentiment": -1
+        },
+        "way": {
+          "con": -1,
+          "sentiment": -1
+        },
+        "time": {
+          "con": -1,
+          "sentiment": -1
+        },
+        "no_of_features": 4,
+        "people": {
+          "con": -1,
+          "sentiment": -1
+        }
+      }
+    },
+    "2763": {
+      "sentence_text": "Technical Account Management",
+      "time": "1/13/2016 0:00",
+      "sentiment": 0,
+      "features": {
+        "no_of_features": 0
+      }
+    },
+    "1596": {
+      "sentence_text": "SDET at Amazon",
+      "time": "12/25/2014 0:00",
+      "sentiment": 0,
+      "features": {
+        "no_of_features": 0
+      }
+    },
+    "4674": {
+      "sentence_text": "Good, bad and the ugly",
+      "time": "1/4/2017 0:00",
+      "sentiment": 0,
+      "features": {
+        "no_of_features": 0
+      }
+    },
+    "1698": {
+      "sentence_text": "Good Work, Good growth path, Talented Peers",
+      "time": "2/10/2015 0:00",
+      "sentiment": 0.8154761904761905,
+      "features": {
+        "path": {
+          "sentiment": 0.2847222222222222,
+          "Good": 0.5694444444444444,
+          "pro": 1
+        },
+        "Work Good": {
+          "Good": 0.5694444444444444,
+          "sentiment": 0.5694444444444444
+        },
+        "no_of_features": 5,
+        "growth path": {
+          "sentiment": 0.5694444444444444,
+          "Good": 0.5694444444444444,
+          "pro": 1
+        },
+        "Good growth": {
+          "sentiment": 1,
+          "pro": 1
+        },
+        "Peers": {
+          "sentiment": 1,
+          "pro": 1
+        }
+      }
+    },
+    "2758": {
+      "sentence_text": "Good company for freshers who have just passed out from college",
+      "time": "1/12/2016 0:00",
+      "sentiment": 0.8923611111111112,
+      "features": {
+        "company": {
+          "Good": 0.5694444444444444,
+          "sentiment": 0.5694444444444444
+        },
+        "for freshers": {
+          "sentiment": 1,
+          "pro": 1
+        },
+        "college": {
+          "sentiment": 1,
+          "pro": 1
+        },
+        "no_of_features": 4,
+        "freshers": {
+          "sentiment": 1,
+          "pro": 1
+        }
+      }
+    },
+    "3762": {
+      "sentence_text": "Nice place to work in",
+      "time": "8/5/2016 0:00",
+      "sentiment": 0.7708333333333333,
+      "features": {
+        "place": {
+          "sentiment": 0.5416666666666666,
+          "Nice": 0.5416666666666666,
+          "pro": 1
+        },
+        "no_of_features": 1
+      }
+    },
+    "973": {
+      "sentence_text": "Flexibility of the work schedules is the best part of the work. The work environment is pretty competitive and friendly, you would always like going to the office. Most of the managers are very friendly and like encouraging good work. The medical benefits provided are top notch.",
+      "time": "2/4/2014 0:00",
+      "sentiment": 0.6575949481899095,
+      "features": {
+        "work environment": {
+          "competitive": 0.16666666666666666,
+          "sentiment": 0.08333333333333333,
+          "pro": 1
+        },
+        "environment": {
+          "competitive": 0.16666666666666666,
+          "sentiment": 0.08333333333333333,
+          "pro": 1
+        },
+        "benefits": {
+          "sentiment": 1,
+          "pro": 1
+        },
+        "work": {
+          "encouraging": 0.2,
+          "good": 0.5694444444444444,
+          "sentiment": 0.6694444444444444,
+          "pro": 1
+        },
+        "part": {
+          "best": 0.5009767441860465,
+          "sentiment": 0.5009767441860465
+        },
+        "notch": {
+          "top": -0.017045454545454544,
+          "benefits": 0.25,
+          "sentiment": 0.045454545454545456,
+          "pro": 1
+        },
+        "schedules": {
+          "sentiment": 1,
+          "pro": 1
+        },
+        "managers": {
+          "sentiment": 1.0,
+          "pro": 1,
+          "Most": 0.0
+        },
+        "office": {
+          "sentiment": 1,
+          "pro": 1
+        },
+        "medical benefits": {
+          "sentiment": 1,
+          "pro": 1
+        },
+        "work schedules": {
+          "sentiment": 1,
+          "pro": 1
+        },
+        "no_of_features": 11
+      }
+    },
+    "4686": {
+      "sentence_text": "Lacking mentorship & career development. Doesn't invest in employee learning. Peer group is complacent & not raising the bar. Expectation setting about the role is vague.",
+      "time": "1/7/2017 0:00",
+      "sentiment": -0.8993055555555557,
+      "features": {
+        "bar": {
+          "con": -1,
+          "sentiment": -1
+        },
+        "career development": {
+          "con": -1,
+          "sentiment": -1
+        },
+        "employee learning": {
+          "con": -1,
+          "sentiment": -1
+        },
+        "no_of_features": 10,
+        "Expectation": {
+          "con": -1,
+          "sentiment": -1
+        },
+        "mentorship": {
+          "Lacking": -0.4166666666666667,
+          "con": -1,
+          "sentiment": -0.4166666666666667
+        },
+        "role": {
+          "con": -1,
+          "sentiment": -1
+        },
+        "development": {
+          "con": -1,
+          "sentiment": -1
+        },
+        "learning": {
+          "con": -1,
+          "sentiment": -1
+        },
+        "Peer group": {
+          "con": -1,
+          "sentiment": -1
+        },
+        "group": {
+          "complacent": -0.375,
+          "con": -1,
+          "sentiment": -0.375
+        }
+      }
+    },
+    "2218": {
+      "sentence_text": "Environment is very good here",
+      "time": "8/20/2015 0:00",
+      "sentiment": 0.7847222222222222,
+      "features": {
+        "Environment": {
+          "good": 0.5694444444444444,
+          "sentiment": 0.2847222222222222,
+          "pro": 1
+        },
+        "no_of_features": 1
+      }
+    },
+    "1251": {
+      "sentence_text": "Working at the company as a support engineer is very bad experiance",
+      "time": "7/1/2014 0:00",
+      "sentiment": -0.2869318181818182,
+      "features": {
+        "experiance": {
+          "sentiment": -0.625,
+          "bad": -0.625
+        },
+        "engineer": {
+          "sentiment": 0.05113636363636364,
+          "support": 0.05113636363636364
+        },
+        "no_of_features": 2
+      }
+    },
+    "1232": {
+      "sentence_text": "Awesome work culture",
+      "time": "6/10/2014 0:00",
+      "sentiment": 0.875,
+      "features": {
+        "work culture": {
+          "Awesome": 0.875,
+          "sentiment": 0.875
+        },
+        "no_of_features": 2,
+        "culture": {
+          "Awesome": 0.875,
+          "sentiment": 0.4375
+        }
+      }
+    },
+    "1622": {
+      "sentence_text": "An awesome place to work",
+      "time": "1/13/2015 0:00",
+      "sentiment": 0.875,
+      "features": {
+        "place": {
+          "sentiment": 0.875,
+          "awesome": 0.875
+        },
+        "no_of_features": 1
+      }
+    }
+  },
+  "name": "Amazon"
+}

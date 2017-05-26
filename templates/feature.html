@@ -51,7 +51,11 @@
             </p>  -->
 
             {% for key , value in feature_json.items %}
-
+                {% comment %}
+                <p>{{value.no_of_sentences}}</p>
+                <p>{{no_of_sentences|find_one_percent}}</p>
+                {% endcomment %}
+                {% if value.no_of_sentences > no_of_sentences|find_one_percent %}
             <!-- <div class="w3-panel w3-border w3-border-black"> -->
                 <!-- <div class="w3-panel w3-leftbar w3-sand w3-xxlarge w3-serif"> -->
                 <div class="w3-panel w3-border w3-pale-grey w3-border-blue">
@@ -60,8 +64,8 @@
                         <!-- <h2 class="post-title">
                             Feature name : {{ key|caps_filter }}
                         </h2> -->
-                        <!-- <a href="{% url 'specify_sentiment' name 'Very_Positive' %}"> -->
-                        <a href="{% url 'feature_wise_chart' name key|replace_space %}">
+                         <a href="{% url 'feature_wise_chart' name key|replace_punctuation %}"> 
+                        
                          <div class="w3-panel w3-leftbar w3-sand w3-xxlarge w3-serif">
                             <p><i> Feature name : {{ key|caps_filter }}</i></p>
                           </div>
@@ -97,7 +101,9 @@
                                     <!-- <li> id is :  {{ id }} </li> -->
                                     <!-- <li> testing : {{sentences|get_from_dict:id}} </li> -->
                                     {% with sentences|get_from_dict:id as dict %}
-                                    <li>  Review  {{ id }}  :   {{dict.sentence_text }} </li>
+                                    <li>  Review   :   {{dict.sentence_text }} 
+                                           <p>Time : {{dict.time|date_filter }} </p> 
+                                    </li>
                                     {% endwith %}
                                 </ul>
                             
@@ -117,7 +123,9 @@
                                     <!-- <li> id is :  {{ id }} </li> -->
                                     <!-- <li> testing : {{sentences|get_from_dict:id}} </li> -->
                                     {% with sentences|get_from_dict:id as dict %}
-                                    <li>  Review  {{ id }}  :   {{dict.sentence_text }} </li>
+                                    <li>  Review  {{ id }}  :   {{dict.sentence_text }} 
+                                            <p>Time : {{dict.time|date_filter }} </p> 
+                                    </li>
                                     {% endwith %}
                                 </ul>
                             
@@ -127,6 +135,7 @@
                     </div>
                 </div>
                 <hr>
+                {%endif%}
              {% endfor%}
                 
                 <!-- Pager -->

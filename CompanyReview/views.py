@@ -25,53 +25,53 @@ def main(request):
         company_name = request.GET['company_name']
 
         if company_name.lower() == 'amazon':
-            with open('amazon.json' , 'r') as f:
+            with open('amazon.json' , 'r',encoding  = 'utf-8') as f:
                 data = json.load(f)
             return render(request , 'main1.html',data)
         if company_name.lower() == 'adobe':
-            with open('adobe.json' , 'r') as f:
+            with open('adobe.json' , 'r',encoding  = 'utf-8') as f:
                 data = json.load(f)
             return render(request , 'main1.html',data)
         else : 
-            with open('company_dict1.json' , 'r') as f:
+            with open('company_dict1.json' , 'r',encoding  = 'utf-8') as f:
                 data = json.load(f)
             return render(request , 'main1.html',data)
 
     return render(request,'navbar.html')
 
 def main1(request, company_name):
-    with open( company_name.lower() + '.json' , 'r') as f:
+    with open( company_name.lower() + '.json' , 'r',encoding  = 'utf-8') as f:
             data = json.load(f)
     return render(request , 'main1.html',data)
 
 
 def reviews(request, company_name):
 
-    with open( company_name.lower() + '.json' , 'r') as f:
+    with open( company_name.lower() + '.json' , 'r',encoding  = 'utf-8') as f:
             data = json.load(f)
     return render(request , 'reviews.html',data)
 
-    with open('company_dict1.json' , 'r') as f:
+    with open('company_dict1.json' , 'r',encoding  = 'utf-8') as f:
             data = json.load(f)
     return render(request , 'reviews.html',data)
 
 
 
 def feature(request,company_name):
-    with open( company_name.lower() + '.json' , 'r') as f:
+    with open( company_name.lower() + '.json' , 'r',encoding  = 'utf-8') as f:
             data = json.load(f)
     return render(request , 'feature.html',data)
 
 
     print ("\n\n\n\ncompany name is : " + company_name)
     # company_name = request.GET['company_name']
-    with open('company_dict1.json' , 'r') as f:
+    with open('company_dict1.json' , 'r',encoding  = 'utf-8') as f:
         data = json.load(f)
     return render(request , 'feature.html',data)
 
 
 def specify_sentiment(request,company_name,sentiment_name):
-    with open( company_name.lower() + '.json' , 'r') as f:
+    with open( company_name.lower() + '.json' , 'r',encoding  = 'utf-8') as f:
             data = json.load(f)
             sentiment_name.replace('_',' ')
             data['specified_sentiment'] = sentiment_name.replace('_',' ')
@@ -81,7 +81,7 @@ def specify_sentiment(request,company_name,sentiment_name):
 def chart(request,company_name):
     print ("company name is : " + company_name)
     # company_name = request.GET['company_name']
-    with open('data.json' , 'r') as f:
+    with open('data.json' , 'r',encoding  = 'utf-8') as f:
         data = json.load(f)
         data['name' ] = company_name
 
@@ -92,10 +92,10 @@ def chart(request,company_name):
 
     
 def simple_chart(request,company_name):
-    # with open('data.json' , 'r') as f:
+    # with open('data.json' , 'r',encoding  = 'utf-8') as f:
     #     data = json.load(f)
 
-    with open( company_name.lower() + '.json' , 'r') as f:
+    with open( company_name.lower() + '.json' , 'r',encoding  = 'utf-8') as f:
             data = json.load(f)
     data['name' ] = company_name
     print("\n\n printing \n\n ")
@@ -153,10 +153,10 @@ def simple_chart(request,company_name):
     return response
 
 def feature_wise_chart(request, company_name, feature_name):
-    # with open('data.json' , 'r') as f:
+    # with open('data.json' , 'r',encoding  = 'utf-8') as f:
     #     data = json.load(f)
     #feature_name = 'environment'
-    with open( company_name.lower() + '.json' , 'r') as f:
+    with open( company_name.lower() + '.json' , 'r',encoding  = 'utf-8') as f:
             data = json.load(f)
     data['name' ] = company_name
     print("\n\n printing \n\n ")

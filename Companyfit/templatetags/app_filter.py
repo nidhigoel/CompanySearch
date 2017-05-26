@@ -52,15 +52,33 @@ def get_date(date):
 	return new_date
 
 
+@register.filter(name="find_one_percent")
+def find_one_percent(no_of_sentences):
+	
+	return(no_of_sentences*0.01)
+
+
+
 @register.filter(name = "caps_filter")
 def get_caps(word):
 	return string.capwords(word) 
 
-@register.filter(name = "replace_space")
-def replace_space(word):
+@register.filter(name = "replace_punctuation")
+def replace_punctuation(url_text):
 	print('\n\n')
-	print(word.replace(' ','_') )
-	return str(word.replace(' ','_'))
+	exclude = set(string.punctuation)
+	filtered_url = ''.join(ch for ch in url_text if ch not in exclude)
+	#return str(word.replace(' ','_').replace('/','_').replace('.','_').replace(':','_').replace('|','_'))
+	filtered_url = filtered_url.replace('...',' ')
+	filtered_url = filtered_url.replace(' ','_')
+	print("\n\n\n")
+	print("filtered url")
+	print(filtered_url.encode('utf-8'))
+	filtered_url = filtered_url.replace('\'','_')
+
+	if filtered_url == '':
+		filtered_url = '_'
+	return str(filtered_url)
 
 @register.filter(name = "remove_quotes")
 def remove_quote(word):
