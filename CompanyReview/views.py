@@ -140,8 +140,8 @@ def simple_chart(request,company_name):
     
     # for  i in range(0,5):
         # print( str(x[i]) + " and " + str(y[i]))
-    ax.plot_date(x, y, '-')
-    #ax.plot_date(x, y, linewidth = 2)
+    #ax.plot_date(x, y, '-')
+    ax.plot_date(x, y, linewidth = 2)
     ax.set_xlabel('Half Yearly Data')
     ax.set_ylabel('Reviews')
     ax.set_title('Graphical View')
