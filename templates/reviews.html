@@ -51,14 +51,39 @@
                 <hr>
 
              {% endfor%}   
+
+<ul class="pagination">
+<li><a href="{% url 'reviews' name %}">Home</a></li>
+
+{% if users.has_other_pages %}
+  
+    {% if users.has_previous %}
+      <li><a href="?page={{ users.previous_page_number }}">Previous Page &laquo;</a></li>
+    {% else %}
+      <li class="disabled"><span>&laquo;</span></li>
+    {% endif %}
+    {% for i in page_range %}
+      {% if users.number == i %}
+        <li class="active"><span>{{ i }} <span class="sr-only">(current)</span></span></li>
+      {% else %}
+        <li><a href="?page={{ i }}">{{ i }}</a></li>
+      {% endif %}
+    {% endfor %}
+    {% if users.has_next %}
+      <li><a href="?page={{ users.next_page_number }}">Next Page &raquo;</a></li>
+    {% else %}
+      <li class="disabled"><span>&raquo;</span></li>
+    {% endif %}
+  </ul>
+{% endif %}
                
                 
                 <!-- Pager -->
-                <ul class="pager">
+                <!-- <ul class="pager">
                     <li class="next">
                         <a href="#">Older Posts &rarr;</a>
                     </li>
-                </ul>
+                </ul> -->
             </div>
         </div>
 </div>

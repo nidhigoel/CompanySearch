@@ -29,7 +29,26 @@
 
         <div class="row" >
             <div class="col-lg-12 col-lg-offset-0 col-md-12 col-md-offset-0">
-            <ol>
+            <ul class="pagination">
+            <h3> List Features  : </h3>
+                <li>
+                    <a href="{% url 'specify_sentiment' name 'Very_Negative' %}"> Very Negative Sentiment</a>
+                </li>
+                <li>
+                    <a href="{% url 'specify_sentiment' name 'Negative' %}"> Negative Sentiment</a>
+                </li>
+                <li>
+                    <a href="{% url 'specify_sentiment' name 'Neutral' %}"> Neutral Sentiment</a>
+                </li>
+                <li>
+                    <a href="{% url 'specify_sentiment' name 'Positive' %}"> Positive Sentiment</a>
+                </li>
+                <li>
+                    <a href="{% url 'specify_sentiment' name 'Very_Positive' %}"> Very Positive Sentiment</a>
+                </li>
+            </ul>
+            {% comment %}
+            <!-- <ol>
                 <li>
                     <a href="{% url 'specify_sentiment' name 'Very_Negative' %}">List features having very negative sentiment</a>
                 </li>
@@ -45,7 +64,8 @@
                 <li>
                     <a href="{% url 'specify_sentiment' name 'Very_Positive' %}">List features having very positive sentiment</a>
                 </li>
-            </ol>
+            </ol> -->
+            {% endcomment %}
             <!-- <p>
             {{ feature_json|debug1 }}
             </p>  -->

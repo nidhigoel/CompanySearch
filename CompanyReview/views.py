@@ -32,6 +32,10 @@ def main(request):
             with open('adobe.json' , 'r',encoding  = 'utf-8') as f:
                 data = json.load(f)
             return render(request , 'main1.html',data)
+        if company_name.lower() == 'google':
+            with open('google.json' , 'r',encoding  = 'utf-8') as f:
+                data = json.load(f)
+            return render(request , 'main1.html',data)
         else : 
             with open('company_dict1.json' , 'r',encoding  = 'utf-8') as f:
                 data = json.load(f)
