@@ -2,11 +2,23 @@ from django  import template
 from DateTime import DateTime
 import string 
 import re
+from string import ascii_letters
 register = template.Library()
 
 @register.filter (name = "get_from_dict")
 def keyvalue(dict, key):    
     return dict[key] 
+
+@register.filter (name = "check_for_url")
+def keyvalue(feature_name):   
+	# valid = re.match('^[\w-]+$', feature_name) is not None
+	# print(valid)
+	# return(valid)
+
+	if all(c in ascii_letters+'-'+' ' for c in feature_name):
+		return(True)
+	else:
+		return(False)
 
 @register.filter(name ="sentiment_filter")
 def get_sentiment(sentiment):

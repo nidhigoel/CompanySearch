@@ -1,0 +1,104 @@
+{% load i18n %} 
+{% load app_filter %}
+
+<link rel="stylesheet" href="/static/css/w3.css">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Company Review</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Theme CSS -->
+    <link href="/static/css/clean-blog.min.css" rel="stylesheet">
+
+   <!-- rating -->
+   <script src="/static/js/jquery.min.js"></script>
+  <script src="/static/js/bootstrap.min.js"></script>
+  <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css" rel="stylesheet">
+  <link href="/static/css/star-rating.css" media="all" rel="stylesheet" type="text/css" />
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.js"></script>
+  <script src="/static/js/star-rating.js" type="text/javascript"></script>
+   
+</head>
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header" style="background-image: url('/static/images/home-bg.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="site-heading">
+                        <h1>{{ name|caps_filter }} </h1>
+                        <hr class="small">
+                        <span class="subheading">{{ industryName|remove_and }}</span>
+                        <span class="subheading">
+	        			 <a href = "http://{{ website }}" > {{ website }} </a> </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+<body>
+	<!-- Main Content -->
+	<div class="container">
+ 	<div class="row">
+            <!-- <div class="col-lg-12 col-lg-offset-0 col-md-12 col-md-offset-0"> -->
+            
+            {% for key , value in sentences.items %}
+            <div class="w3-panel w3-border w3-pale-grey w3-border-blue">
+                <div class="post-preview">
+                		<div class="w3-panel w3-leftbar w3-sand w3-xxlarge w3-serif">
+                		    <p><i>{{ value.sentence_text|remove_quotes|caps_filter}}</i></p>
+                		  </div>
+                    	<h3 class="post-subtitle">
+                           Sentiment :  {{ value.sentiment|sentiment_filter  }}
+                        </h3> 
+                        <h3 class="post-subtitle">
+                           Features : {{ value.features.no_of_features }}
+                        </h3> 
+                        <ol> 
+                          
+                          {%  for feature_name , feature_value in value.features.items %}
+                           {%  if feature_name != 'no_of_features' %}
+                              <li> {{ feature_name|caps_filter }} : {{ feature_value.sentiment   }} 
+                                 {% for opinion_word , opinion_word_sentiment in feature_value.items %}
+                                 <ul> 
+                                    {% if opinion_word != 'sentiment' %}
+                                      <li> {{ opinion_word|caps_filter }} : {{ opinion_word_sentiment  }} </li>
+                                    {% endif %}
+                                 </ul>
+                               
+                               {% endfor %}
+                               </li>
+                            {% endif %}
+
+                          {% endfor %}
+
+                        </ol>
+                    </a>
+                    <p class="post-meta">Posted  on {{ value.time|date_filter }}</p>
+                </div>
+                 </div>
+                <hr>
+
+             {% endfor%}   
+
+		</div>
+	</div>
+
+
+
+	<!-- Footer -->
+	{% include 'footer.html' %}
+
+</body>
+
+</html>

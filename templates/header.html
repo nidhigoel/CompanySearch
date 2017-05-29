@@ -51,10 +51,10 @@
                         <a href="{% url 'reviews' name %}">Reviews </a>
                     </li>
                     <li>
-                        <a href="{% url 'chart' name %}">Graph View</a>
+                        <a href="{% url 'detail_chart' name %}">Graph View 1</a>
                     </li>
                     <li>
-                        <a href="{% url 'simple_chart' name %}">Simple Chart</a>
+                        <a href="{% url 'simple_chart' name %}">Graph View 2</a>
                     </li>
                     
                 </ul>
@@ -71,7 +71,7 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="site-heading">
-                        <h1>{{ name }} </h1>
+                        <h1>{{ name|caps_filter}} </h1>
                         <hr class="small">
                         <span class="subheading">{{ industryName|remove_and }}</span>
                     </div>

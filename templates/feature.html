@@ -7,25 +7,6 @@
 </div>
     <!-- Main Content -->
     <div class="container">
-      <!--   <div class = "row" > 
-            <label> Industry Name : {{ industryName }} </label> <br>
-            <label> Sector Name : {{ sectorName }} </label> <br>
-            <label> Reviews : Total {{ no_of_sentences }} Reviews</label>  <br>
-             <table> 
-                <tr> 
-                    <td> <label> Rating : </label>  </td>
-                     
-                    <td>  <input id="input-id" name="input-name" type="number" class="rating" clearButton = "1"  showClear = "false"  clearButtonTitle = "click me"  min=0 max=5 step=0.5 data-size="xs" rtl = "true" data-rtl="false"   
-                    value = '{{ overallRating }}'   readOnly = "false"  displayOnly = "false">
-                    
-                    </td>
-                </tr>
-              </table>
-
-            <label> Description : {{ description }} </label> <br> 
-            <label>  Website : <a href = "http://{{ website }}" > {{ website }} </a> </label>
-           
-            </div> -->
 
         <div class="row" >
             <div class="col-lg-12 col-lg-offset-0 col-md-12 col-md-offset-0">
@@ -47,34 +28,12 @@
                     <a href="{% url 'specify_sentiment' name 'Very_Positive' %}"> Very Positive Sentiment</a>
                 </li>
             </ul>
-            {% comment %}
-            <!-- <ol>
-                <li>
-                    <a href="{% url 'specify_sentiment' name 'Very_Negative' %}">List features having very negative sentiment</a>
-                </li>
-                <li>
-                    <a href="{% url 'specify_sentiment' name 'Negative' %}">List features having negative sentiment</a>
-                </li>
-                <li>
-                    <a href="{% url 'specify_sentiment' name 'Neutral' %}">List features having neutral sentiment</a>
-                </li>
-                <li>
-                    <a href="{% url 'specify_sentiment' name 'Positive' %}">List features having positive sentiment</a>
-                </li>
-                <li>
-                    <a href="{% url 'specify_sentiment' name 'Very_Positive' %}">List features having very positive sentiment</a>
-                </li>
-            </ol> -->
-            {% endcomment %}
             <!-- <p>
             {{ feature_json|debug1 }}
             </p>  -->
 
             {% for key , value in feature_json.items %}
-                {% comment %}
-                <p>{{value.no_of_sentences}}</p>
-                <p>{{no_of_sentences|find_one_percent}}</p>
-                {% endcomment %}
+                {% if key|check_for_url %}
                 {% if value.no_of_sentences > no_of_sentences|find_one_percent %}
             <!-- <div class="w3-panel w3-border w3-border-black"> -->
                 <!-- <div class="w3-panel w3-leftbar w3-sand w3-xxlarge w3-serif"> -->
@@ -84,7 +43,8 @@
                         <!-- <h2 class="post-title">
                             Feature name : {{ key|caps_filter }}
                         </h2> -->
-                         <a href="{% url 'feature_wise_chart' name key|replace_punctuation %}"> 
+                        
+                            <a href="{% url 'feature_wise_chart' name key|replace_punctuation %}"> 
                         
                          <div class="w3-panel w3-leftbar w3-sand w3-xxlarge w3-serif">
                             <p><i> Feature name : {{ key|caps_filter }}</i></p>
@@ -156,6 +116,7 @@
                 </div>
                 <hr>
                 {%endif%}
+                {% endif %}
              {% endfor%}
                 
                 <!-- Pager -->
