@@ -6,7 +6,7 @@
     <!-- Main Content -->
     <div class="container">
         <div class = "row" > 
-            <label> Company Name : {{ name }} </label> <br>
+            <label> Company Name : {{ name|caps_filter }} </label> <br>
             {% if industryName %}
             <label> Industry Name : {{ industryName|remove_and }} </label> <br>
             {% endif %}

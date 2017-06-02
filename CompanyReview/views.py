@@ -8,6 +8,8 @@ import django
 import datetime
 import re
 #from sentiment_algo_code.f1 import gui1
+from feature_level_SA.sentiment_analysis import gui
+from feature_level_SA.sentiment_analysis import algo3
 from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas
 from matplotlib.figure import Figure
 from matplotlib.dates import DateFormatter,datestr2num
@@ -312,7 +314,87 @@ def main1(request, company_name):
     with open( company_name.lower() + '.json' , 'r',encoding  = 'utf-8') as f:
             data = json.load(f)
     return render(request , 'main1.html',data)
+# def reviews(request, company_name):
 
+#     with open( company_name.lower() + '.json' , 'r',encoding  = 'utf-8') as f:
+#             data = json.load(f)
+#     #return render(request , 'reviews.html',data)
+
+
+#     if 'page' in request.GET : 
+#         page_no = request.GET['page'] 
+#     else:
+#         page_no = '1'
+
+#     temp_data = data['sentences']
+#     dict = {}
+#     for key ,value in temp_data.items() : 
+#         dict[key] = value['time']
+#         print(key + " and " + value['time'])
+
+
+
+#     ordered = sorted(dict.items(), key=lambda t: t[1] , reverse = True)
+#     print("i am here")
+#     # print(ordered)
+
+
+#     new_data = {}
+#     for key , value in ordered:
+#         print( " key is : " + key + " value is : " + value )
+#         new_data[key] = temp_data[key]
+
+
+#     t = tuple(new_data.items())
+#     print("page inumber is : " + page_no)
+#     print(type(page_no))
+#     paginator = Paginator(t, 10)
+
+#     # return render(request , 'feature_test.html',data)
+#     try:
+#         users = paginator.page(int(page_no))
+#     except PageNotAnInteger:
+#         users = paginator.page(1)
+#     except EmptyPage:
+#         users = paginator.page(paginator.num_pages)
+#     data = {}
+#     data['name'] = company_name
+#     temp_data = {}
+#     for x in users:
+#         print (x[0] )
+#         temp_data[x[0]] = x[1]
+
+#     print("checking tempdata")
+#     for x in temp_data : 
+#         print(x)
+#         break;
+
+#     data['sentences'] = temp_data
+#     data['users'] = users
+
+
+#     index = int(page_no) - 1
+#     max_index = len(paginator.page_range) 
+#     # print(index)
+#     if (index >=9) :
+#         start_index = index - 9
+#     else  : 
+#         start_index = 0
+#     end_index = index + 9 if index <= max_index - 9 else max_index
+
+#     page_range = paginator.page_range[start_index:end_index]
+
+#     data['page_range'] = page_range
+     
+#     print( "range is : " + str(start_index ) + " and " + str(end_index))
+
+
+#     return render(request, 'reviews.html' , data )
+
+
+#     with open('company_dict1.json' , 'r',encoding  = 'utf-8') as f:
+#             data = json.load(f)
+#     return render(request , 'reviews.html',data)
 def reviews(request, company_name):
 
     with open( company_name.lower() + '.json' , 'r',encoding  = 'utf-8') as f:
@@ -329,7 +411,22 @@ def reviews(request, company_name):
     for x in data['sentences'].items():
         print(x)
         break;
-    
+    # temp_data = data['sentences']
+    # dict = {}
+    # for key ,value in temp_data.items() : 
+    #     dict[key] = value['time']
+    #     print(key + " and " + value['time'])
+
+
+
+    # ordered = sorted(dict.items(), key=lambda t: t[1] , reverse = True)
+    # print("i am here")
+    # # print(ordered)
+    # new_data = {}
+    # for key , value in ordered:
+    #     print (key + str(temp_data[key]))
+    #     new_data[key] = temp_data[key]
+
     t = tuple(data['sentences'].items())
     print("page inumber is : " + page_no)
     print(type(page_no))
@@ -351,6 +448,29 @@ def reviews(request, company_name):
 
     data['sentences'] = temp_data
     data['users'] = users
+
+
+    # t = tuple(new_data.items())
+    # print("page inumber is : " + page_no)
+    # print(type(page_no))
+    # paginator = Paginator(t, 10)
+
+    # # return render(request , 'feature_test.html',data)
+    # try:
+    #     users = paginator.page(int(page_no))
+    # except PageNotAnInteger:
+    #     users = paginator.page(1)
+    # except EmptyPage:
+    #     users = paginator.page(paginator.num_pages)
+    # data = {}
+    # data['name'] = company_name
+    # temp_data = {}
+    # for x in users:
+    #     print (x[0])
+    #     temp_data[x[0]] = x[1]
+
+    # data['sentences'] = temp_data
+    # data['users'] = users
 
 
     index = int(page_no) - 1
